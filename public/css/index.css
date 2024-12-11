@@ -1,0 +1,93 @@
+body {
+    font: 16px 'Poppins', sans-serif;
+    line-height: 1.6em;
+    background: #e0f7fa; /* Azul celeste */
+    color: #004d40; /* Azul oscuro para el texto */
+    min-width: 230px;
+    max-width: 550px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.todoapp {
+    background: #ffffff; /* Blanco para contraste */
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todoapp h1 {
+    font-size: 2.5rem;
+    color: #00796b; /* Azul verdoso */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+button {
+    background: linear-gradient(to right, #00796b, #004d40); /* Gradiente */
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #004d40, #00796b);
+}
+
+.todo-list li {
+    font-size: 18px;
+    padding: 15px;
+    border-bottom: 1px solid #b2dfdb;
+}
+
+.todo-list li label {
+    color: #004d40; /* Azul oscuro */
+}
+
+.todo-list li.completed label {
+    color: #80cbc4; /* Verde claro */
+    text-decoration: line-through;
+}
+
+.filters li a {
+    color: #004d40;
+    border: 1px solid #80cbc4;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.filters li a.selected {
+    background: #004d40;
+    color: #ffffff;
+    border-color: #004d40;
+}
+
+.clear-completed {
+    color: #004d40;
+    background: #e0f7fa;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.clear-completed:hover {
+    background: #b2dfdb;
+}
+
+@media (max-width: 430px) {
+    .todoapp {
+        padding: 15px;
+    }
+
+    .todo-list li {
+        font-size: 16px;
+    }
+}

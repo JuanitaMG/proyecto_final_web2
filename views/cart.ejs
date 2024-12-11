@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="/path/to/your/css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Carrito de Compras</h2>
+        <ul>
+            <% const cartEntries = Object.entries(cart); %>
+            <% if (cartEntries.length > 0) { %>
+                <% cartEntries.forEach(([productId, quantity]) => { %>
+                    <li>Producto ID: <%= productId %> | Cantidad: <%= quantity %></li>
+                <% }) %>
+            <% } else { %>
+                <li>Tu carrito está vacío</li>
+            <% } %>
+        </ul>
+        <form action="/cart/add" method="POST">
+            <label for="productId">Agregar ID del producto:</label>
+            <input type="text" name="productId" required>
+            <button type="submit" class="button">Agregar al carrito</button>
+        </form>
+    </div>
+</body>
+</html>

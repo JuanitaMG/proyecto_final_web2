@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda HydroMotion</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3 header-bg">
+        <!-- Título de la tienda -->
+        <div class="text-center flex-grow-1">
+            <h1 class="title">Tienda HydroMotion</h1>
+        </div>
+        
+        <!-- Botón de iniciar sesión -->
+        <div>
+            <a href="http://localhost:3002/auth/login" class="btn login-btn">Login</a>
+        </div>
+    </header>    
+    <main>
+        <h1 class="welcome">Bienvenido a nuestra tienda HydroMotion</h1>
+        <% if (categories && categories.length > 0) { %>
+            <% categories.forEach(category => { %>
+                <section class="category-section">
+                    <h2 class="category-title"><%= category.name %></h2>
+                    <div class="products">
+                        <% category.products.forEach(product => { %>
+                            <div class="product">
+                                <h3 class="product-name"><%= product.name %></h3>
+                                <img class="product-image" src="/images/<%= product.imagePath %>" alt="<%= product.name %>">
+                                <p class="product-price">Precio: $<%= product.price %></p>
+                                <form action="/cart/add" method="post" class="add-to-cart-form">
+                                    <input type="hidden" name="productId" value="<%= product.id %>">
+                                    <button type="submit" class="btn add-to-cart-btn">Agregar al carrito</button>
+                                </form>                            
+                            </div>
+                        <% }) %>
+                    </div>
+                </section>
+            <% }) %>
+        <% } else { %>
+            <p class="no-products">No hay productos disponibles.</p>
+        <% } %>
+    </main>
+</body>
+</html>

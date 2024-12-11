@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #d1f2ff, #eff9ff); /* Aqua blue gradient */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #4daef7; /* Vibrant blue */
+}
+
+h2 {
+    margin: 20px 0;
+    color: #5faee0; /* Soft blue */
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.product {
+    background: #ffffff;
+    border: 1px solid #a1d1f0; /* Light blue border */
+    border-radius: 8px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+    font-size: 18px;
+    color: #4daef7; /* Vibrant blue */
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    color: #5faee0; /* Soft blue */
+    margin: 10px 0;
+}
+
+button {
+    background-color: #4daef7; /* Vibrant blue */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3c97d9; /* Darker blue */
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #eaf6ff; /* Soft blue background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section h2 {
+    text-align: center;
+    border-bottom: 2px solid #a1d1f0; /* Light blue */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Login Button Styling */
+.login-btn {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #4daef7, #72b7e7); /* Gradient blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+    background: linear-gradient(to right, #3c97d9, #5faee0); /* Darker gradient blue */
+    transform: scale(1.05);
+}

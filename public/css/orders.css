@@ -1,0 +1,132 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd; /* Azul claro */
+    color: #333;
+}
+
+header {
+    background-color: #90caf9; /* Azul pastel */
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px; /* Bordes redondeados inferiores */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #42a5f5; /* Azul vibrante */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+}
+
+table th {
+    background-color: #64b5f6; /* Azul pastel */
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #e3f2fd; /* Azul muy claro */
+}
+
+table tr:hover {
+    background-color: #bbdefb; /* Azul claro al pasar el cursor */
+    color: #333;
+}
+
+.status {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.status.Pending {
+    background-color: #ffca28; /* Amarillo pastel */
+    color: #5d4037;
+}
+
+.status.Completed {
+    background-color: #81c784; /* Verde pastel */
+    color: white;
+}
+
+.status.Shipped {
+    background-color: #42a5f5; /* Azul vibrante */
+    color: white;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #6c757d; /* Gris oscuro */
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    background-color: #e3f2fd; /* Azul claro */
+    border-top: 2px solid #bbdefb;
+}
+
+footer a {
+    color: #42a5f5; /* Azul vibrante */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+button {
+    background-color: #64b5f6; /* Azul pastel */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Bordes más suaves */
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #42a5f5; /* Azul vibrante al pasar el cursor */
+    transform: scale(1.05); /* Efecto de ampliación */
+}

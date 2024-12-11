@@ -1,0 +1,112 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #d1f2ff, #eff9ff); /* Aqua blue gradient */
+    color: #333;
+}
+
+/* Header Styling */
+.header-bg {
+    background-color: #4daef7; /* Vibrant blue */
+    color: white;
+}
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.login-btn {
+    padding: 10px 20px;
+    background-color: #89c9f7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.login-btn:hover {
+    background-color: #3c97d9;
+}
+
+/* Main Content */
+.welcome {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 20px;
+    color: #4daef7;
+}
+
+.category-section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eaf6ff; /* Soft blue background */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.category-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #4daef7;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+.product-name {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.product-price {
+    font-size: 1rem;
+    color: #5faee0;
+    margin-bottom: 15px;
+}
+
+.add-to-cart-form {
+    text-align: center;
+}
+.add-to-cart-btn {
+    padding: 10px;
+    background-color: #4daef7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.add-to-cart-btn:hover {
+    background-color: #3c97d9;
+}
+
+.no-products {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #89c9f7;
+    margin-top: 20px;
+}
